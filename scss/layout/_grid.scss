@@ -1,0 +1,15 @@
+.l-grid__layout {
+  width: 100%;
+
+  @include between($tablet, $desktop) {
+    max-width: 75rem;
+  }
+
+  @include between($desktop, $desktop-large) {
+    max-width: 100rem;
+  }
+
+  @include from($desktop-large) {
+    max-width: 117.5rem;
+  }
+}

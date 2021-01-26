@@ -1,0 +1,249 @@
+.c-header__container {
+  display: none;
+}
+
+.c-header__logo-container {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.c-logo-span {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-family: $font-primary-bold;
+
+  @include between($tablet, $desktop) {
+    font-size: 1.6rem;
+    line-height: 2;
+  }
+
+  @include between($desktop, $desktop-large) {
+    font-size: 2.2rem;
+    line-height: 3;
+  }
+
+  @include from($desktop-large) {
+    font-size: 3rem;
+    line-height: 4.4;
+  }
+}
+
+.c-header__logo-span {
+  color: $color-blue-primary;
+}
+
+.c-header__link-item {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  font-family: $font-primary-regular;
+  color: $color-blue-primary;
+  text-decoration: none;
+  padding: 0 2rem;
+  transition: 0.3s;
+
+  &:hover {
+    color: $color-orange-primary;
+    cursor: pointer;
+  }
+}
+
+.c-header__button-container {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.c-about {
+  background: url("/assets/images/img-about-bg.png");
+  background-size: cover;
+}
+
+.c-about__container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+
+.c-about__textual {
+  margin: 7rem auto 1rem auto;
+  text-align: center;
+}
+
+.c-about__first-text {
+  background-color: $color-cyan-primary;
+  display: flex;
+  border-radius: 1.7rem;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.c-about__icon-container {
+  background-color: $color-orange-secondary;
+  border-radius: 1.7rem;
+  padding: 0.4rem 1rem 0rem 1rem;
+}
+
+.c-about__first {
+  padding: 0.9rem 1.1rem;
+  margin-right: 2rem;
+}
+
+.c-about__text {
+  margin-top: 2.6rem;
+  margin-bottom: 3.9rem;
+}
+
+.c-about__link {
+  font-size: 1.3rem;
+  line-height: 1.2;
+  color: $color-blue-secondary;
+  font-family: $font-primary-regular;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  transition: 0.3s;
+
+  &:hover {
+    color: $color-orange-primary;
+    cursor: pointer;
+  }
+}
+
+.c-about__image {
+  margin: 0 auto;
+  width: 20.6rem;
+  height: 37.6rem;
+}
+
+// Media Queries
+
+//==== UNTIL 400px ================================================================
+@include until(400px) {
+  .c-about__link {
+    display: block;
+    margin-top: 2rem;
+  }
+}
+//==== UNTIL TABLET ================================================================
+@include until($tablet) {
+  .c-header__link-item {
+    display: block;
+    text-align: center;
+    padding: 1rem 0;
+  }
+}
+//==== FROM TABLET ================================================================
+@include from($tablet) {
+  .c-header__container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .c-header__logo-container {
+    text-align: unset;
+    margin-top: 0;
+  }
+
+  .c-header__nav {
+    margin-left: auto;
+    margin-right: 3.5rem;
+  }
+
+  .c-header__link-item {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+
+  .c-header__button-container {
+    text-align: unset;
+    margin-top: 0;
+  }
+
+  .c-about__container {
+    padding: 0 3rem 0 6rem;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .c-about__textual {
+    text-align: unset;
+  }
+
+  .c-about__first-text {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  .c-about__first {
+    margin-right: 4.5rem;
+  }
+
+  .c-about__image {
+    margin: 0 auto;
+  }
+}
+//==== BETWEEN TABLET AND DESKTOP =================================================
+@include between($tablet, $desktop) {
+  .c-header__container {
+    margin-top: 4.7rem;
+  }
+
+  .c-about__textual {
+    margin-top: 10rem;
+    margin-right: 5rem;
+  }
+
+  .c-about__icon-container {
+    padding: 0.8rem 1rem 0rem 1rem;
+  }
+
+  .c-about__image {
+    width: 30.6rem;
+    height: 64.6rem;
+  }
+}
+//==== BETWEEN DESKTOP AND DESKTOP-LARGE ==========================================
+@include between($desktop, $desktop-large) {
+  .c-header__container {
+    margin-top: 8.7rem;
+  }
+
+  .c-about__textual {
+    margin-top: 15rem;
+    margin-right: 8rem;
+  }
+
+  .c-about__icon-container {
+    padding: 1rem 1rem 0rem 1rem;
+  }
+
+  .c-about__image {
+    width: 35.6rem;
+    height: 73.6rem;
+  }
+}
+//==== FROM DESKTOP-LARGE =========================================================
+@include from($desktop-large) {
+  .c-header__container {
+    margin-top: 10.7rem;
+  }
+
+  .c-about__textual {
+    margin-top: 20rem;
+    margin-right: 10rem;
+  }
+
+  .c-about__icon-container {
+    padding: 1.2rem 1rem 0rem 1rem;
+  }
+
+  .c-about__link {
+    font-size: 1.6rem;
+    line-height: 4.4;
+  }
+
+  .c-about__image {
+    width: 44.6rem;
+    height: 82.6rem;
+  }
+}

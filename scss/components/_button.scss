@@ -1,0 +1,73 @@
+//Hamburger button, appears on small screen devices
+.c-header__nav-toggle-container {
+  overflow: hidden;
+  display: flex;
+  position: absolute;
+  right: 0.5rem;
+  top: 1rem;
+  padding: 0.5rem;
+}
+
+.c-header__nav-toggle {
+  display: inline-block;
+
+  @include from($tablet) {
+    display: none;
+  }
+}
+
+.c-header__nav-toggle-wrap {
+  position: relative;
+  top: 0.2rem;
+  width: 4.4rem;
+  height: 2.7rem;
+  transition: 0.25s;
+  z-index: 2;
+}
+
+.c-header__nav-toggle {
+  cursor: pointer;
+}
+
+.c-header__nav-toggle .c-header__nav-bar {
+  position: absolute;
+  border-radius: 0.2rem;
+  width: 80%;
+  transition: 0.5s;
+}
+
+.c-header__nav-toggle .c-header__nav-bar--top {
+  border: 0.4rem solid $color-orange-primary;
+  border-bottom: none;
+  top: 0;
+}
+
+.c-header__nav-toggle .c-header__nav-bar--middle {
+  height: 0.4rem;
+  background-color: $color-orange-primary;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  top: 0.4rem;
+}
+
+.c-header__nav-toggle .c-header__nav-bar--bottom {
+  border: 0.4rem solid $color-orange-primary;
+  border-top: none;
+  top: 2.2rem;
+}
+
+.c-button-open .c-header__nav-bar--top {
+  transform: rotate(45deg) translate(0.8rem, 0.8rem);
+  transition: 0.5s;
+}
+
+.c-button-open .c-header__nav-bar--middle {
+  transform: translate(23rem);
+  transition: 0.1s ease-in;
+  opacity: 0;
+}
+
+.c-button-open .c-header__nav-bar--bottom {
+  transform: rotate(-45deg) translate(0.8rem, -0.7rem);
+  transition: 0.5s;
+}
