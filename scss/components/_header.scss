@@ -1,10 +1,31 @@
-.c-header__container--inner {
+.c-header__container {
   display: none;
 }
 
 .c-header__logo-container {
   text-align: center;
   margin-top: 1.5rem;
+}
+
+.c-logo-span {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-family: $font-primary-bold;
+
+  @include between($tablet, $desktop) {
+    font-size: 1.6rem;
+    line-height: 2;
+  }
+
+  @include between($desktop, $desktop-large) {
+    font-size: 2.2rem;
+    line-height: 3;
+  }
+
+  @include from($desktop-large) {
+    font-size: 3rem;
+    line-height: 4.4;
+  }
 }
 
 .c-header__logo-span {
@@ -36,7 +57,7 @@
   background-size: cover;
 }
 
-.c-about__container--inner {
+.c-about__container {
   display: flex;
   flex-direction: column;
   padding: 0 2rem;
@@ -87,13 +108,10 @@
   }
 }
 
-.c-about__image-container {
-  text-align: center;
-
-  .c-about__image {
-    width: 20.6rem;
-    height: 37.6rem;
-  }
+.c-about__image {
+  margin: 0 auto;
+  width: 20.6rem;
+  height: 37.6rem;
 }
 
 // Media Queries
@@ -115,7 +133,7 @@
 }
 //==== FROM TABLET ================================================================
 @include from($tablet) {
-  .c-header__container--inner {
+  .c-header__container {
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -141,7 +159,7 @@
     margin-top: 0;
   }
 
-  .c-about__container--inner {
+  .c-about__container {
     padding: 0 3rem 0 6rem;
     flex-direction: row;
     margin: 0 auto;
@@ -160,13 +178,13 @@
     margin-right: 4.5rem;
   }
 
-  .c-about__image-container {
-    text-align: unset;
+  .c-about__image {
+    margin: 0 auto;
   }
 }
 //==== BETWEEN TABLET AND DESKTOP =================================================
 @include between($tablet, $desktop) {
-  .c-header__container--inner {
+  .c-header__container {
     margin-top: 4.7rem;
   }
 
@@ -179,16 +197,14 @@
     padding: 0.8rem 1rem 0rem 1rem;
   }
 
-  .c-about__image-container {
-    .c-about__image {
-      width: 30.6rem;
-      height: 64.6rem;
-    }
+  .c-about__image {
+    width: 30.6rem;
+    height: 64.6rem;
   }
 }
 //==== BETWEEN DESKTOP AND DESKTOP-LARGE ==========================================
 @include between($desktop, $desktop-large) {
-  .c-header__container--inner {
+  .c-header__container {
     margin-top: 8.7rem;
   }
 
@@ -201,16 +217,14 @@
     padding: 1rem 1rem 0rem 1rem;
   }
 
-  .c-about__image-container {
-    .c-about__image {
-      width: 35.6rem;
-      height: 73.6rem;
-    }
+  .c-about__image {
+    width: 35.6rem;
+    height: 73.6rem;
   }
 }
 //==== FROM DESKTOP-LARGE =========================================================
 @include from($desktop-large) {
-  .c-header__container--inner {
+  .c-header__container {
     margin-top: 10.7rem;
   }
 
@@ -228,10 +242,8 @@
     line-height: 4.4;
   }
 
-  .c-about__image-container {
-    .c-about__image {
-      width: 44.6rem;
-      height: 82.6rem;
-    }
+  .c-about__image {
+    width: 44.6rem;
+    height: 82.6rem;
   }
 }

@@ -87,11 +87,11 @@ h4 {
   }
 }
 
-h5,
-.c-logo-span {
+h5 {
   font-size: 1.1rem;
   line-height: 1.5;
   font-family: $font-primary-bold;
+  color: $color-orange-primary;
 
   @include between($tablet, $desktop) {
     font-size: 1.6rem;
@@ -107,10 +107,6 @@ h5,
     font-size: 3rem;
     line-height: 4.4;
   }
-}
-
-h5 {
-  color: $color-orange-primary;
 }
 
 h6 {
@@ -175,21 +171,5 @@ button {
   &:hover {
     background-color: $color-blue-primary;
     cursor: pointer;
-  }
-}
-
-.l-grid__layout {
-  width: 100%;
-
-  @include between($tablet, $desktop) {
-    max-width: 75rem;
-  }
-
-  @include between($desktop, $desktop-large) {
-    max-width: 100rem;
-  }
-
-  @include from($desktop-large) {
-    max-width: 117.5rem;
   }
 }
