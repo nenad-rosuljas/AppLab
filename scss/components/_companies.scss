@@ -1,0 +1,83 @@
+.c-companies {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 4rem;
+}
+
+.c-companies__text {
+  font-size: 1.6rem;
+  color: $color-blue-primary;
+  margin-top: 4rem;
+  margin-bottom: 5.1rem;
+}
+
+.c-companies__icon-group {
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  margin-bottom: 4rem;
+
+  img {
+    transition: 1s;
+    margin-bottom: 3rem;
+
+    &:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+  }
+}
+
+// Media Queries
+
+//==== FROM TABLET ================================================================
+@include from($tablet) {
+  .c-companies__icon-group {
+    column-gap: 2rem;
+  }
+}
+//==== BETWEEN TABLET AND DESKTOP =================================================
+@include between($tablet, $desktop) {
+  .c-companies {
+    padding: 0 6rem;
+  }
+
+  .c-companies__text {
+    margin-top: 6.4rem;
+  }
+
+  .c-companies__icon-group {
+    grid-template-columns: auto auto;
+    margin-bottom: 6rem;
+  }
+}
+//==== BETWEEN DESKTOP AND DESKTOP-LARGE ==========================================
+@include between($desktop, $desktop-large) {
+  .c-companies {
+    padding: 0 8rem;
+  }
+
+  .c-companies__text {
+    margin-top: 8.4rem;
+  }
+
+  .c-companies__icon-group {
+    grid-template-columns: auto auto auto auto auto;
+    margin-bottom: 8rem;
+  }
+}
+//==== FROM DESKTOP-LARGE =========================================================
+@include from($desktop-large) {
+  .c-companies {
+    padding: 0 12rem;
+  }
+
+  .c-companies__text {
+    margin-top: 11.4rem;
+  }
+
+  .c-companies__icon-group {
+    grid-template-columns: auto auto auto auto auto;
+    margin-bottom: 15rem;
+  }
+}
