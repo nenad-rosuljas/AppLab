@@ -13,7 +13,7 @@
 .c-features__image {
   margin: 0 auto;
   width: 25.6rem;
-  height: 37.6rem;
+  height: auto;
 }
 
 .c-features__main-text {
@@ -28,49 +28,50 @@
 }
 
 .c-icon-container {
-  padding: 1.7rem 1.5rem;
+  padding: 1.1rem 1.5rem;
   border-radius: 4.4rem;
   height: fit-content;
+  width: fit-content;
   align-self: center;
   margin-bottom: 1.5rem;
 }
 
-.c-features__icon-container--red {
+.c-icon-container--red {
   background-color: $color-pink-red-secondary;
 }
 
-.c-features__icon--red {
+.c-icon--red {
   filter: invert(42%) sepia(17%) saturate(4150%) hue-rotate(319deg)
     brightness(116%) contrast(103%);
 }
 
-.c-features__secondary-heading--red {
+.c-secondary-heading--red {
   color: $color-pink-red-primary;
 }
 
-.c-features__icon-container--blue {
+.c-icon-container--blue {
   background-color: $color-blue-magenta-primary;
 }
 
-.c-features__icon--blue {
+.c-icon--blue {
   filter: invert(29%) sepia(100%) saturate(1881%) hue-rotate(216deg)
     brightness(96%) contrast(111%);
 }
 
-.c-features__secondary-heading--blue {
+.c-secondary-heading--blue {
   color: $color-blue-other;
 }
 
-.c-features__icon-container--green {
+.c-icon-container--green {
   background-color: $color-green-secondary;
 }
 
-.c-features__icon--green {
+.c-icon--green {
   filter: invert(49%) sepia(42%) saturate(527%) hue-rotate(89deg)
     brightness(94%) contrast(89%);
 }
 
-.c-features__secondary-heading--green {
+.c-secondary-heading--green {
   color: $color-green-primary;
 }
 
@@ -108,20 +109,21 @@
 @include between($tablet, $desktop) {
   .c-features__image {
     width: 35.6rem;
-    height: 60.6rem;
+    height: auto;
   }
 }
 //==== BETWEEN DESKTOP AND DESKTOP-LARGE ==========================================
 @include between($desktop, $desktop-large) {
   .c-features__image {
     width: 40.6rem;
-    height: 73.6rem;
+    height: auto;
   }
 }
 //==== FROM DESKTOP-LARGE =========================================================
 @include from($desktop-large) {
   .c-features__image {
     width: 60.6rem;
-    height: 85.9rem;
+    height: auto;
+    margin-left: -13rem;
   }
 }

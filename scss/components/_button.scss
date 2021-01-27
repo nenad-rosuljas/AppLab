@@ -56,18 +56,20 @@
   top: 2.2rem;
 }
 
-.c-button-open .c-header__nav-bar--top {
-  transform: rotate(45deg) translate(0.8rem, 0.8rem);
-  transition: 0.5s;
-}
+.c-header__nav-toggle {
+  &.c-button-open .c-header__nav-bar--top {
+    transform: rotate(45deg) translate(0.8rem, 0.8rem);
+    transition: 0.5s;
+  }
 
-.c-button-open .c-header__nav-bar--middle {
-  transform: translate(23rem);
-  transition: 0.1s ease-in;
-  opacity: 0;
-}
+  &.c-button-open .c-header__nav-bar--middle {
+    transform: translate(23rem);
+    transition: 0.1s ease-in;
+    opacity: 0;
+  }
 
-.c-button-open .c-header__nav-bar--bottom {
-  transform: rotate(-45deg) translate(0.8rem, -0.7rem);
-  transition: 0.5s;
+  &.c-button-open .c-header__nav-bar--bottom {
+    transform: rotate(-45deg) translate(0.8rem, -0.7rem);
+    transition: 0.5s;
+  }
 }

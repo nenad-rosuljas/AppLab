@@ -55,6 +55,7 @@
 .c-about {
   background: url("/assets/images/img-about-bg.png");
   background-size: cover;
+  background-position: bottom;
 }
 
 .c-about__container {
@@ -110,7 +111,7 @@
 .c-about__image {
   margin: 0 auto;
   width: 20.6rem;
-  height: 37.6rem;
+  height: auto;
 }
 
 // Media Queries
@@ -198,7 +199,7 @@
 
   .c-about__image {
     width: 30.6rem;
-    height: 64.6rem;
+    height: auto;
   }
 }
 //==== BETWEEN DESKTOP AND DESKTOP-LARGE ==========================================
@@ -218,7 +219,7 @@
 
   .c-about__image {
     width: 35.6rem;
-    height: 73.6rem;
+    height: auto;
   }
 }
 //==== FROM DESKTOP-LARGE =========================================================
@@ -243,6 +244,6 @@
 
   .c-about__image {
     width: 44.6rem;
-    height: 82.6rem;
+    height: auto;
   }
 }

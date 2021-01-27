@@ -5,7 +5,7 @@ $(document).ready(()=>{
     $(this).toggleClass('c-button-open');
   });
 
-  $(".c-header__nav-toggle-container").on('click',()=>{
-    $(".c-header__container--inner").slideToggle();
+  $toggleButton.on('click',()=>{
+    $(".c-header__container").slideToggle();
   })
 })
