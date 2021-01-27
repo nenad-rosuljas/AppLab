@@ -11,7 +11,7 @@
   margin-bottom: 5.1rem;
 }
 
-.c-companies__icon-group {
+.c-companies__image-group {
   display: grid;
   grid-template-columns: auto;
   align-items: center;
@@ -32,7 +32,7 @@
 
 //==== FROM TABLET ================================================================
 @include from($tablet) {
-  .c-companies__icon-group {
+  .c-companies__image-group {
     column-gap: 2rem;
   }
 }
@@ -46,7 +46,7 @@
     margin-top: 6.4rem;
   }
 
-  .c-companies__icon-group {
+  .c-companies__image-group {
     grid-template-columns: auto auto;
     margin-bottom: 6rem;
   }
@@ -61,8 +61,8 @@
     margin-top: 8.4rem;
   }
 
-  .c-companies__icon-group {
-    grid-template-columns: auto auto auto auto auto;
+  .c-companies__image-group {
+    grid-template-columns: repeat(5, auto);
     margin-bottom: 8rem;
   }
 }
@@ -76,8 +76,8 @@
     margin-top: 11.4rem;
   }
 
-  .c-companies__icon-group {
-    grid-template-columns: auto auto auto auto auto;
+  .c-companies__image-group {
+    grid-template-columns: repeat(5, auto);
     margin-bottom: 15rem;
   }
 }

@@ -564,23 +564,23 @@ button:hover {
   margin-bottom: 5.1rem;
 }
 
-.c-companies__icon-group {
+.c-companies__image-group {
   display: grid;
   grid-template-columns: auto;
   align-items: center;
   margin-bottom: 4rem;
 }
-.c-companies__icon-group img {
+.c-companies__image-group img {
   transition: 1s;
   margin-bottom: 3rem;
 }
-.c-companies__icon-group img:hover {
+.c-companies__image-group img:hover {
   transform: scale(1.2);
   cursor: pointer;
 }
 
 @media (min-width: 769px) {
-  .c-companies__icon-group {
+  .c-companies__image-group {
     column-gap: 2rem;
   }
 }
@@ -593,7 +593,7 @@ button:hover {
     margin-top: 6.4rem;
   }
 
-  .c-companies__icon-group {
+  .c-companies__image-group {
     grid-template-columns: auto auto;
     margin-bottom: 6rem;
   }
@@ -607,8 +607,8 @@ button:hover {
     margin-top: 8.4rem;
   }
 
-  .c-companies__icon-group {
-    grid-template-columns: auto auto auto auto auto;
+  .c-companies__image-group {
+    grid-template-columns: repeat(5, auto);
     margin-bottom: 8rem;
   }
 }
@@ -621,8 +621,8 @@ button:hover {
     margin-top: 11.4rem;
   }
 
-  .c-companies__icon-group {
-    grid-template-columns: auto auto auto auto auto;
+  .c-companies__image-group {
+    grid-template-columns: repeat(5, auto);
     margin-bottom: 15rem;
   }
 }
