@@ -55,6 +55,7 @@
 .c-about {
   background: url("/assets/images/img-about-bg.png");
   background-size: cover;
+  background-position: bottom;
 }
 
 .c-about__container {
@@ -80,12 +81,11 @@
 .c-about__icon-container {
   background-color: $color-orange-secondary;
   border-radius: 1.7rem;
-  padding: 0.4rem 1rem 0rem 1rem;
+  padding: 0.7rem 1rem 0rem 1rem;
 }
 
 .c-about__first {
-  padding: 0.9rem 1.1rem;
-  margin-right: 2rem;
+  padding: 0.9rem 0.5rem;
 }
 
 .c-about__text {
@@ -111,7 +111,7 @@
 .c-about__image {
   margin: 0 auto;
   width: 20.6rem;
-  height: 37.6rem;
+  height: auto;
 }
 
 // Media Queries
@@ -175,7 +175,7 @@
   }
 
   .c-about__first {
-    margin-right: 4.5rem;
+    margin-right: 3rem;
   }
 
   .c-about__image {
@@ -199,7 +199,7 @@
 
   .c-about__image {
     width: 30.6rem;
-    height: 64.6rem;
+    height: auto;
   }
 }
 //==== BETWEEN DESKTOP AND DESKTOP-LARGE ==========================================
@@ -219,7 +219,7 @@
 
   .c-about__image {
     width: 35.6rem;
-    height: 73.6rem;
+    height: auto;
   }
 }
 //==== FROM DESKTOP-LARGE =========================================================
@@ -244,6 +244,6 @@
 
   .c-about__image {
     width: 44.6rem;
-    height: 82.6rem;
+    height: auto;
   }
 }

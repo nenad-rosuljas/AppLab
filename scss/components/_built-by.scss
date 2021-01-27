@@ -1,0 +1,84 @@
+.c-built-by {
+  border-bottom: 0.2rem solid $color-grey-tertiary;
+}
+
+.c-built-by__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+.c-built-by__image {
+  width: 27rem;
+  height: auto;
+  margin: 3rem auto;
+}
+
+.c-built-by__textual {
+  width: 100%;
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.c-built-by__main-heading {
+  margin-bottom: 2.9rem;
+}
+
+.c-built-by__main-text {
+  margin-bottom: 4rem;
+}
+
+// Media Queries
+//==== FROM TABLET ================================================================
+@include from($tablet) {
+  .c-built-by__image {
+    margin: 0;
+    margin-right: 7rem;
+  }
+
+  .c-built-by__container {
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
+    text-align: unset;
+    padding: 0 5rem;
+    padding-bottom: 15rem;
+  }
+
+  .c-built-by__textual {
+    margin: 0;
+    padding: 0;
+  }
+}
+//==== BETWEEN TABLET AND DESKTOP =================================================
+@include between($tablet, $desktop) {
+  .c-built-by__image {
+    width: 35rem;
+    height: auto;
+  }
+}
+//==== BETWEEN DESKTOP AND DESKTOP-LARGE ==========================================
+@include between($desktop, $desktop-large) {
+  .c-built-by__image {
+    width: 45rem;
+    height: auto;
+  }
+}
+//==== FROM DESKTOP-LARGE =========================================================
+@include from($desktop-large) {
+  .c-built-by__image {
+    width: 45rem;
+    height: auto;
+  }
+}
+//==== FROM 1400px =========================================================
+@include from(1400px) {
+  .c-built-by__image {
+    margin-right: 11rem;
+    margin-left: -10rem;
+    width: auto;
+    height: auto;
+  }
+}

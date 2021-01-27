@@ -1,0 +1,129 @@
+.c-features {
+  padding: 1rem;
+  @include flex-column-center;
+  text-align: center;
+}
+
+.c-features__textual {
+  width: 100%;
+  max-width: 50rem;
+  padding: 0 1.5rem;
+}
+
+.c-features__image {
+  margin: 0 auto;
+  width: 25.6rem;
+  height: auto;
+}
+
+.c-features__main-text {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.c-features__group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.c-icon-container {
+  padding: 1.1rem 1.5rem;
+  border-radius: 4.4rem;
+  height: fit-content;
+  width: fit-content;
+  align-self: center;
+  margin-bottom: 1.5rem;
+}
+
+.c-icon-container--red {
+  background-color: $color-pink-red-secondary;
+}
+
+.c-icon--red {
+  filter: invert(42%) sepia(17%) saturate(4150%) hue-rotate(319deg)
+    brightness(116%) contrast(103%);
+}
+
+.c-secondary-heading--red {
+  color: $color-pink-red-primary;
+}
+
+.c-icon-container--blue {
+  background-color: $color-blue-magenta-primary;
+}
+
+.c-icon--blue {
+  filter: invert(29%) sepia(100%) saturate(1881%) hue-rotate(216deg)
+    brightness(96%) contrast(111%);
+}
+
+.c-secondary-heading--blue {
+  color: $color-blue-other;
+}
+
+.c-icon-container--green {
+  background-color: $color-green-secondary;
+}
+
+.c-icon--green {
+  filter: invert(49%) sepia(42%) saturate(527%) hue-rotate(89deg)
+    brightness(94%) contrast(89%);
+}
+
+.c-secondary-heading--green {
+  color: $color-green-primary;
+}
+
+// Media Queries
+//==== FROM TABLET ================================================================
+@include from($tablet) {
+  .c-features {
+    padding: 0;
+    flex-direction: row;
+    margin-right: auto;
+    text-align: unset;
+  }
+
+  .c-features__image {
+    margin: 0;
+    margin-right: 3rem;
+  }
+
+  .c-features__main-text {
+    margin-bottom: 9rem;
+  }
+
+  .c-features__group {
+    flex-direction: row;
+    column-gap: 3.2rem;
+    margin-bottom: 6rem;
+    padding-right: 4rem;
+  }
+
+  .c-icon-container {
+    margin-bottom: 0;
+  }
+}
+//==== BETWEEN TABLET AND DESKTOP =================================================
+@include between($tablet, $desktop) {
+  .c-features__image {
+    width: 35.6rem;
+    height: auto;
+  }
+}
+//==== BETWEEN DESKTOP AND DESKTOP-LARGE ==========================================
+@include between($desktop, $desktop-large) {
+  .c-features__image {
+    width: 40.6rem;
+    height: auto;
+  }
+}
+//==== FROM DESKTOP-LARGE =========================================================
+@include from($desktop-large) {
+  .c-features__image {
+    width: 60.6rem;
+    height: auto;
+    margin-left: -13rem;
+  }
+}
