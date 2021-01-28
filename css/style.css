@@ -249,19 +249,19 @@ p {
 }
 
 .c-logo-span {
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   font-family: "Poppins Bold", sans-serif;
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   .c-logo-span {
-    font-size: 1.6rem;
+    font-size: 2rem;
     line-height: 2;
   }
 }
 @media (min-width: 1025px) and (max-width: 1200px) {
   .c-logo-span {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     line-height: 3;
   }
 }
@@ -1661,6 +1661,81 @@ p {
 @media (min-width: 1401px) {
   .c-get-now__image {
     width: auto;
+  }
+}
+.c-footer {
+  background-color: #09142e;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.c-footer__logo-container {
+  margin-bottom: 4rem;
+}
+
+.c-footer__logo-span {
+  color: #ffffff;
+}
+
+.c-footer__nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.c-footer__link-item {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  font-family: "Poppins Regular", sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5em 2rem;
+  transition: 0.3s;
+}
+.c-footer__link-item:hover {
+  color: #fcae61;
+  cursor: pointer;
+}
+
+.c-footer__social-icons {
+  margin-top: 5rem;
+  margin-bottom: 9rem;
+}
+.c-footer__social-icons .icon {
+  width: 3rem;
+  height: 3rem;
+}
+.c-footer__social-icons .icon:not(:last-of-type) {
+  margin-right: 1.5rem;
+}
+.c-footer__social-icons .icon a {
+  fill: #616368;
+  transition: 0.3s;
+}
+.c-footer__social-icons .icon:hover {
+  cursor: pointer;
+}
+.c-footer__social-icons .icon:hover a {
+  fill: #fcae61;
+}
+
+@media (min-width: 769px) {
+  .c-footer {
+    padding: 11.6rem 2rem 12.7rem 2rem;
+  }
+
+  .c-footer__nav-links {
+    flex-direction: row;
+  }
+
+  .c-footer__link-item {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+}
+@media (min-width: 1501px) {
+  .c-footer {
+    margin-top: -5rem;
   }
 }
 
