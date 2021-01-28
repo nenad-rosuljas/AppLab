@@ -56,24 +56,24 @@ h1 {
 
 h2 {
   font-size: 2.7rem;
-  line-height: 2.8;
+  line-height: 1.3;
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   h2 {
     font-size: 3.2rem;
-    line-height: 3.8;
+    line-height: 1.3;
   }
 }
 @media (min-width: 1025px) and (max-width: 1200px) {
   h2 {
     font-size: 4rem;
-    line-height: 4.8;
+    line-height: 1.3;
   }
 }
 @media (min-width: 1201px) {
   h2 {
     font-size: 4.8rem;
-    line-height: 5.8;
+    line-height: 1.3;
   }
 }
 
@@ -1505,7 +1505,7 @@ p {
 
 .c-faq__container {
   margin: 0 auto;
-  margin-bottom: 11.1rem;
+  margin-bottom: 5rem;
 }
 
 .c-faq__header-container {
@@ -1560,6 +1560,10 @@ p {
 }
 
 @media (min-width: 769px) {
+  .c-faq__container {
+    margin-bottom: 11.1rem;
+  }
+
   .c-faq__main-text {
     padding: 0 12rem;
   }
@@ -1579,6 +1583,84 @@ p {
 @media (min-width: 1201px) {
   .c-faq__main-text {
     padding: 0 23rem;
+  }
+}
+.c-get-now {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.c-get-now__textual {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+}
+
+.c-get-now__text {
+  margin-top: 3rem;
+  margin-bottom: 5.1rem;
+}
+
+.c-get-now__link:first-of-type {
+  margin-right: 3.2rem;
+}
+
+.c-get-now__image {
+  height: auto;
+  width: 28rem;
+  margin: 0 auto;
+}
+
+.c-get-now__link-img {
+  width: 10rem;
+}
+
+@media (min-width: 769px) {
+  .c-get-now {
+    text-align: unset;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .c-get-now__image {
+    margin: 0;
+  }
+
+  .c-get-now__link-img {
+    width: 15rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .c-get-now__image {
+    width: 40rem;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .c-get-now__image {
+    width: 50rem;
+  }
+}
+@media (min-width: 1025px) {
+  .c-get-now__link-img {
+    width: auto;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .c-get-now__image {
+    width: 60rem;
+  }
+}
+@media (min-width: 1201px) {
+  .c-get-now__textual {
+    padding: 0;
+    margin-top: 9.6rem;
+    margin-left: 14rem;
+  }
+}
+@media (min-width: 1401px) {
+  .c-get-now__image {
+    width: auto;
   }
 }
 

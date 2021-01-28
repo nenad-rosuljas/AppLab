@@ -1,0 +1,86 @@
+.c-get-now {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.c-get-now__textual {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+}
+
+.c-get-now__text {
+  margin-top: 3rem;
+  margin-bottom: 5.1rem;
+}
+
+.c-get-now__link:first-of-type {
+  margin-right: 3.2rem;
+}
+
+.c-get-now__image {
+  height: auto;
+  width: 28rem;
+  margin: 0 auto;
+}
+
+.c-get-now__link-img {
+  width: 10rem;
+}
+
+// Media Queries
+//==== FROM TABLET =======================================================================
+@include from($tablet) {
+  .c-get-now {
+    text-align: unset;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .c-get-now__image {
+    margin: 0;
+  }
+
+  .c-get-now__link-img {
+    width: 15rem;
+  }
+}
+//==== BETWEEN TABLET AND DESKTOP =========================================================
+@include between($tablet, $desktop) {
+  .c-get-now__image {
+    width: 40rem;
+  }
+}
+//==== BETWEEN DESKTOP AND DESKTOP-LARGE ===================================================
+@include between($desktop, $desktop-large) {
+  .c-get-now__image {
+    width: 50rem;
+  }
+}
+//==== FROM DESKTOP =======================================================================
+@include from($desktop) {
+  .c-get-now__link-img {
+    width: auto;
+  }
+}
+//==== DESKTOP-LARGE AND 1400px ===========================================================
+@include between($desktop-large, 1400px) {
+  .c-get-now__image {
+    width: 60rem;
+  }
+}
+//==== FROM DESKTOP-LARGE =================================================================
+@include from($desktop-large) {
+  .c-get-now__textual {
+    padding: 0;
+    margin-top: 9.6rem;
+    margin-left: 14rem;
+  }
+}
+//==== FROM 1400px =========================================================================
+@include from(1400px) {
+  .c-get-now__image {
+    width: auto;
+  }
+}
