@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Poppins Regular";
   src: url("/scss/base/fonts/Poppins/Poppins-Regular.woff");
@@ -1496,6 +1497,88 @@ p {
     max-width: 62rem;
     margin-right: 2rem;
     padding: 0;
+  }
+}
+.c-faq {
+  border-bottom: 0.2rem solid #e5e6e5;
+}
+
+.c-faq__container {
+  margin: 0 auto;
+  margin-bottom: 11.1rem;
+}
+
+.c-faq__header-container {
+  text-align: center;
+}
+
+.c-faq__main-text {
+  padding: 0 2rem;
+  margin-top: 3.2rem;
+  margin-bottom: 6.5rem;
+}
+
+.c-faq__accordion {
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+  max-width: 94.6rem;
+}
+
+.c-faq__accordion-item {
+  background-color: #f5f7fa;
+  margin-bottom: 0.9rem;
+}
+
+.c-faq__accordion-item-header {
+  padding: 2rem 0;
+  padding-left: 2rem;
+  padding-right: 6rem;
+  position: relative;
+  cursor: pointer;
+}
+.c-faq__accordion-item-header::after {
+  content: "+";
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: #242f51;
+}
+.c-faq__accordion-item-header.active::after {
+  content: "−";
+}
+
+.c-faq__accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.c-faq__accordion-item-content {
+  padding: 0 2rem 2rem 2rem;
+}
+
+@media (min-width: 769px) {
+  .c-faq__main-text {
+    padding: 0 12rem;
+  }
+
+  .c-faq__accordion-item-header {
+    padding-left: 5rem;
+  }
+  .c-faq__accordion-item-header::after {
+    top: 2rem;
+    right: 3.8rem;
+  }
+
+  .c-faq__accordion-item-content {
+    padding: 0 10rem 4rem 5rem;
+  }
+}
+@media (min-width: 1201px) {
+  .c-faq__main-text {
+    padding: 0 23rem;
   }
 }
 
