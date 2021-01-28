@@ -1173,6 +1173,10 @@ p {
 .c-pricing {
   border-bottom: 0.2rem solid #e5e6e5;
 }
+.c-pricing .current {
+  background-color: #2500f9;
+  color: #ffffff;
+}
 
 .c-pricing__container {
   margin: 0 auto;
@@ -1207,6 +1211,7 @@ p {
   line-height: 1.2;
   transition: 0.3s;
   outline: none;
+  cursor: pointer;
 }
 @media (min-width: 1201px) {
   .c-pricing__button {
@@ -1215,23 +1220,10 @@ p {
     line-height: 1.5;
   }
 }
-.c-pricing__button:hover {
-  background-color: #f4f7f9;
-  cursor: pointer;
-}
 
 .c-pricing__button-one,
 .c-pricing__button-two {
   background-color: unset;
-}
-
-.current {
-  background-color: #2500f9;
-  color: #ffffff;
-}
-.current:hover {
-  background-color: #242f51;
-  cursor: pointer;
 }
 
 .c-pricing__card-container {
@@ -1327,6 +1319,183 @@ p {
     padding: 1.7rem 4.15rem;
     font-size: 1.6rem;
     line-height: 1.5;
+  }
+}
+.c-testimonials {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.c-testimonials .current {
+  background-color: #eff3f8;
+  color: #2500f9;
+}
+
+.c-testimonials__image {
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  width: 27rem;
+  height: auto;
+}
+
+.c-testimonials__textual-container {
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.c-testimonials__main-text {
+  margin-top: 2.8rem;
+  margin-bottom: 4.3rem;
+}
+
+.c-testimonials__star-container {
+  margin-bottom: 2.9rem;
+}
+
+.c-testimonials__star-icon {
+  width: 2rem;
+  margin: 0.3rem;
+  filter: invert(83%) sepia(29%) saturate(4585%) hue-rotate(1deg) brightness(106%) contrast(103%);
+}
+
+.c-testimonials__secondary-text {
+  margin-top: 3.1rem;
+  margin-bottom: 5.1rem;
+}
+
+.c-testimonials__client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.c-testimonials__client .c-testimonials__client-img-container {
+  border-radius: 5rem;
+  overflow: hidden;
+  height: 9.1rem;
+}
+.c-testimonials__client .c-testimonials__person {
+  margin-left: 1.5rem;
+}
+.c-testimonials__client .c-testimonials__person .c-testimonials__name {
+  font-size: 1.3rem;
+  line-height: 2;
+  font-family: "Poppins Semi-Bold", sans-serif;
+  color: #242f51;
+}
+.c-testimonials__client .c-testimonials__person p {
+  text-align: left;
+}
+
+.c-testimonials__button-container {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.c-testimonials__divider {
+  border-right: 0.1rem solid #e7e7e7;
+  height: 2.5rem;
+  margin: 0 1rem;
+}
+
+.c-testimonials__button {
+  border-radius: 50%;
+  font-size: 1.8rem;
+  padding: 0.8rem;
+  background-color: unset;
+  color: #eff3f8;
+  border: 0.2rem solid #eff3f8;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (min-width: 401px) {
+  .c-testimonials__client {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .c-testimonials__button-container {
+    margin: 0;
+    margin-left: auto;
+  }
+}
+@media (min-width: 769px) {
+  .c-testimonials {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15.3rem;
+    margin-bottom: 19rem;
+  }
+
+  .c-testimonials__image {
+    margin: 0;
+  }
+
+  .c-testimonials__textual-container {
+    text-align: unset;
+  }
+
+  .c-testimonials__main-text {
+    padding-right: 3rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .c-testimonials__image {
+    width: 42rem;
+  }
+
+  .c-testimonials__client .c-testimonials__person .c-testimonials__name {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+}
+@media (min-width: 1025px) {
+  .c-testimonials__client .c-testimonials__person {
+    margin-left: 3rem;
+  }
+
+  .c-testimonials__button {
+    padding: 1.4rem;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .c-testimonials__image {
+    width: 60rem;
+  }
+
+  .c-testimonials__client .c-testimonials__person .c-testimonials__name {
+    font-size: 1.7rem;
+    line-height: 2;
+  }
+}
+@media (min-width: 1201px) {
+  .c-testimonials__client .c-testimonials__person .c-testimonials__name {
+    font-size: 1.8rem;
+    line-height: 2;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .c-testimonials__image {
+    width: 65rem;
+  }
+}
+@media (min-width: 1401px) {
+  .c-testimonials {
+    align-items: flex-end;
+  }
+
+  .c-testimonials__image {
+    width: auto;
+  }
+
+  .c-testimonials__textual-container {
+    width: 100%;
+    max-width: 62rem;
+    margin-right: 2rem;
+    padding: 0;
   }
 }
 

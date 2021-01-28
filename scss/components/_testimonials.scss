@@ -1,0 +1,206 @@
+.c-testimonials {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+  .current {
+    background-color: $color-cyan-blue-secondary;
+    color: $color-blue-secondary;
+  }
+}
+
+.c-testimonials__image {
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  width: 27rem;
+  height: auto;
+}
+
+.c-testimonials__textual-container {
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.c-testimonials__main-text {
+  margin-top: 2.8rem;
+  margin-bottom: 4.3rem;
+}
+
+.c-testimonials__star-container {
+  margin-bottom: 2.9rem;
+}
+
+.c-testimonials__star-icon {
+  width: 2rem;
+  margin: 0.3rem;
+  filter: invert(83%) sepia(29%) saturate(4585%) hue-rotate(1deg)
+    brightness(106%) contrast(103%);
+}
+
+.c-testimonials__secondary-text {
+  margin-top: 3.1rem;
+  margin-bottom: 5.1rem;
+}
+
+.c-testimonials__client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .c-testimonials__client-img-container {
+    border-radius: 5rem;
+    overflow: hidden;
+    height: 9.1rem;
+  }
+
+  .c-testimonials__person {
+    margin-left: 1.5rem;
+
+    .c-testimonials__name {
+      font-size: 1.3rem;
+      line-height: 2;
+      font-family: $font-primary-semi-bold;
+      color: $color-blue-primary;
+    }
+
+    p {
+      text-align: left;
+    }
+  }
+}
+
+.c-testimonials__button-container {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.c-testimonials__divider {
+  border-right: 0.1rem solid $color-grey-other;
+  height: 2.5rem;
+  margin: 0 1rem;
+}
+
+.c-testimonials__button {
+  border-radius: 50%;
+  font-size: 1.8rem;
+  padding: 0.8rem;
+  background-color: unset;
+  color: $color-cyan-blue-secondary;
+  border: 0.2rem solid $color-cyan-blue-secondary;
+  outline: none;
+  cursor: pointer;
+}
+
+// Media Queries
+//==== FROM 400px =======================================================================
+@include from(400px) {
+  .c-testimonials__client {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .c-testimonials__button-container {
+    margin: 0;
+    margin-left: auto;
+  }
+}
+//==== FROM TABLET ======================================================================
+@include from($tablet) {
+  .c-testimonials {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15.3rem;
+    margin-bottom: 19rem;
+  }
+
+  .c-testimonials__image {
+    margin: 0;
+  }
+
+  .c-testimonials__textual-container {
+    text-align: unset;
+  }
+
+  .c-testimonials__main-text {
+    padding-right: 3rem;
+  }
+}
+//==== BETWEEN TABLET AND DESKTOP ========================================================
+@include between($tablet, $desktop) {
+  .c-testimonials__image {
+    width: 42rem;
+  }
+
+  .c-testimonials__client {
+    .c-testimonials__person {
+      .c-testimonials__name {
+        font-size: 1.5rem;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+//==== FROM DESKTOP ======================================================================
+@include from($desktop) {
+  .c-testimonials__client {
+    .c-testimonials__person {
+      margin-left: 3rem;
+    }
+  }
+
+  .c-testimonials__button {
+    padding: 1.4rem;
+  }
+}
+//==== BETWEEN DESKTOP AND DESKTOP-LARGE =================================================
+@include between($desktop, $desktop-large) {
+  .c-testimonials__image {
+    width: 60rem;
+  }
+
+  .c-testimonials__client {
+    .c-testimonials__person {
+      .c-testimonials__name {
+        font-size: 1.7rem;
+        line-height: 2;
+      }
+    }
+  }
+}
+//==== FROM DESKTOP-LARGE ================================================================
+@include from($desktop-large) {
+  .c-testimonials__client {
+    .c-testimonials__person {
+      .c-testimonials__name {
+        font-size: 1.8rem;
+        line-height: 2;
+      }
+    }
+  }
+}
+//==== BETWEEN DESKTOP-LARGE AND 1400px =================================================
+@include between($desktop-large, 1400px) {
+  .c-testimonials__image {
+    width: 65rem;
+  }
+}
+//==== FROM 1400px =======================================================================
+@include from(1400px) {
+  .c-testimonials {
+    align-items: flex-end;
+  }
+
+  .c-testimonials__image {
+    width: auto;
+  }
+
+  .c-testimonials__textual-container {
+    width: 100%;
+    max-width: 62rem;
+    margin-right: 2rem;
+    padding: 0;
+  }
+}
