@@ -151,7 +151,7 @@ p {
   }
 }
 
-button {
+.c-button {
   background-color: $color-blue-secondary;
   color: $color-white-primary;
   font-family: $font-primary-bold;
@@ -161,6 +161,7 @@ button {
   font-size: 1.3rem;
   line-height: 1.2;
   transition: 0.3s;
+  outline: none;
 
   @include from($desktop-large) {
     padding: 1.7rem 4.15rem;
