@@ -1,0 +1,83 @@
+.c-footer {
+  background-color: $color-blue-tertiary;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.c-footer__logo-container {
+  margin-bottom: 4rem;
+}
+
+.c-footer__logo-span {
+  color: $color-white-primary;
+}
+
+.c-footer__nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.c-footer__link-item {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  font-family: $font-primary-regular;
+  color: $color-white-primary;
+  text-decoration: none;
+  padding: 0.5em 2rem;
+  transition: 0.3s;
+
+  &:hover {
+    color: $color-orange-primary;
+    cursor: pointer;
+  }
+}
+
+.c-footer__social-icons {
+  margin-top: 5rem;
+  margin-bottom: 9rem;
+
+  .icon {
+    width: 3rem;
+    height: 3rem;
+
+    &:not(:last-of-type) {
+      margin-right: 1.5rem;
+    }
+
+    a {
+      fill: $color-grey-primary;
+      transition: 0.3s;
+    }
+
+    &:hover {
+      cursor: pointer;
+      a {
+        fill: $color-orange-primary;
+      }
+    }
+  }
+}
+
+// Media Queries
+//==== FROM TABLET ================================================================
+@include from($tablet) {
+  .c-footer {
+    padding: 11.6rem 2rem 12.7rem 2rem;
+  }
+
+  .c-footer__nav-links {
+    flex-direction: row;
+  }
+
+  .c-footer__link-item {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+}
+//==== FROM 1500px ================================================================
+@include from(1500px) {
+  .c-footer {
+    margin-top: -5rem;
+  }
+}

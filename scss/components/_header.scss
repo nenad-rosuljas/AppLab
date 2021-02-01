@@ -8,17 +8,17 @@
 }
 
 .c-logo-span {
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   font-family: $font-primary-bold;
 
   @include between($tablet, $desktop) {
-    font-size: 1.6rem;
+    font-size: 2rem;
     line-height: 2;
   }
 
   @include between($desktop, $desktop-large) {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     line-height: 3;
   }
 

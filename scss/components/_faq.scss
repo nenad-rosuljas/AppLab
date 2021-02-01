@@ -1,0 +1,92 @@
+.c-faq {
+  border-bottom: 0.2rem solid $color-grey-tertiary;
+}
+
+.c-faq__container {
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.c-faq__header-container {
+  text-align: center;
+}
+
+.c-faq__main-text {
+  padding: 0 2rem;
+  margin-top: 3.2rem;
+  margin-bottom: 6.5rem;
+}
+
+.c-faq__accordion {
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+  max-width: 94.6rem;
+}
+
+.c-faq__accordion-item {
+  background-color: $color-alice-primary;
+  margin-bottom: 0.9rem;
+}
+
+.c-faq__accordion-item-header {
+  padding: 2rem 0;
+  padding-left: 2rem;
+  padding-right: 6rem;
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: "\002B";
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 3rem;
+    color: $color-blue-primary;
+  }
+
+  &.active::after {
+    content: "\2212";
+  }
+}
+
+.c-faq__accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.c-faq__accordion-item-content {
+  padding: 0 2rem 2rem;
+}
+
+// Media Queries
+//==== FROM TABLET ================================================================
+@include from($tablet) {
+  .c-faq__container {
+    margin-bottom: 11.1rem;
+  }
+
+  .c-faq__main-text {
+    padding: 0 12rem;
+  }
+
+  .c-faq__accordion-item-header {
+    padding-left: 5rem;
+
+    &::after {
+      top: 2rem;
+      right: 3.8rem;
+    }
+  }
+
+  .c-faq__accordion-item-content {
+    padding: 0 10rem 4rem 5rem;
+  }
+}
+//==== FROM DESKTOP-LARGE ==========================================================
+@include from($desktop-large) {
+  .c-faq__main-text {
+    padding: 0 23rem;
+  }
+}
