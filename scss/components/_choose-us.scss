@@ -8,12 +8,12 @@
   margin-bottom: 5rem;
 }
 
-.c-choose-us__main-heading {
+.c-choose-us__heading--main {
   margin-bottom: 3.5rem;
   padding: 0 2rem;
 }
 
-.c-choose-us__main-text {
+.c-choose-us__text--main {
   padding: 0 2rem;
 }
 
@@ -25,25 +25,23 @@
   text-align: center;
   margin-bottom: 3.9rem;
   padding: 0 2rem;
-}
 
-.c-choose-us__group {
   .c-icon-container {
     margin: 0 auto;
     margin-bottom: 2rem;
+
+    &.c-icon-container--alice-blue {
+      background-color: $color-alice-blue-primary;
+    }
+
+    &.c-icon-container--china-ivory {
+      background-color: $color-china-ivory-primary;
+    }
+
+    &.c-icon-container--rose-white {
+      background-color: $color-rose-white-primary;
+    }
   }
-}
-
-.c-icon-container--alice-blue {
-  background-color: $color-alice-blue-primary;
-}
-
-.c-icon-container--china-ivory {
-  background-color: $color-china-ivory-primary;
-}
-
-.c-icon-container--rose-white {
-  background-color: $color-rose-white-primary;
 }
 
 // Media Queries
@@ -65,7 +63,7 @@
 }
 //==== BETWEEN TABLET AND DESKTOP =================================================
 @include between($tablet, $desktop) {
-  .c-choose-us__main-text {
+  .c-choose-us__text--main {
     padding: 0 13rem;
   }
 
@@ -76,7 +74,7 @@
 }
 //==== BETWEEN DESKTOP AND DESKTOP-LARGE ==========================================
 @include between($desktop, $desktop-large) {
-  .c-choose-us__main-text {
+  .c-choose-us__text--main {
     padding: 0 17rem;
   }
 
@@ -87,7 +85,7 @@
 }
 //==== FROM DESKTOP-LARGE =========================================================
 @include from($desktop-large) {
-  .c-choose-us__main-text {
+  .c-choose-us__text--main {
     padding: 0 22rem;
   }
 
